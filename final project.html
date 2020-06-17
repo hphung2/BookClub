@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Club</title>
+    <style>
+        .container{
+            max-width: 600px;
+            margin: 0 auto;
+
+        }
+        h1 {
+            text-align: center;
+            color: green;
+            margin: 40px 20px;
+            padding-top: 40px;
+        }
+        h2{
+            text-align: center;
+            margin: 20px 20px;
+            opacity: 0.7;
+            font-weight: normal;
+        }
+        h3{
+            text-align: center;
+            margin: 30px 30px;
+            padding: 20px 0px;
+           font-size: 30px;
+           font-weight: lighter;
+           border:2px solid greenyellow;
+           border-radius: 10px;
+           background: greenyellow;
+           margin-bottom: 50px;
+           
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 0 auto;
+            margin-top: 30px; 
+        }
+        li{ 
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: green;
+            font-size: 18px;
+        }
+        button{
+            display: block;
+            margin: 30px auto;
+            padding: 10px 10px;
+            font-size: 18px;
+            color: white;
+            background: green;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 10px 10px 20px rgb (0,0,0,0.8);
+            transition: all 200ms ease-in-out;
+        }
+        button:hover {
+color: green;
+background: white;
+border: 1px solid green;
+        }
+        .footer {
+            font-size: 18px;
+            text-align: center;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class= "container">
+    <h1>
+        Welcome to Book Club 🤓
+    </h1>
+<h2>
+    Today, we talk about our weekly favourite book 📚
+</h2>    
+<h3>
+    The Four Agreements 
+</h3>
+<img src="https://d.gr-assets.com/books/1348204644l/6596.jpg" alt="book cover">
+<p>
+    The Four Agreements by Don Miguez Rulz draws on the long tradition of the Toltecs, an ancient, indigenous people of Mexico, to show you
+    that we have been domesticated from childhood, how these internal, guiding rules hurt us and what we can do to break and
+    replace them with a new set of agreements with ourselves.
+    <br/> <br/>
+    The 1997 book The Four Agreements spent eight years on the New York Times bestseller list, selling over six million copies
+    and spreading these four guiding principles to live by:
+    <ol>
+        <li>
+    Be impeccable with your word. 
+    </li>
+    <li>
+    Don’t take anything personally.
+    </li>
+    <li>
+    Don’t make assumptions.
+    </li>
+    <li>
+    Always do your best.
+    </li>
+    </ol>
+</p>
+<a href="https://www.amazon.com/Four-Agreements-Practical-Personal-Freedom/dp/1878424319/ref=sr_1_1?dchild=1&keywords=the+four+agreements&qid=1591978165&s=books&sr=1-1"> 
+    👉 Learn more at Amazon
+</a>
+
+<button>
+    Borrow the book
+</button>
+<p class=" footer">
+    This page was built by 
+    <a class= "footer" href="https://www.linkedin.com/in/hphung2/">
+    Huyen Phung
+    </a>
+</p>
+</div>
+<script>
+    function toBorrow() {
+        let name= prompt("What is your name?");
+        let email= prompt("What is your email?");
+        alert(
+            "Hi " +name+ "! Thank you for your interest in Book Club. We will be in touch via email soon! 🤙"
+        )
+        
+    }
+
+    let borrowButton= document.querySelector("button");
+    borrowButton.addEventListener ("click", toBorrow);
+</script>
+</body>
+</html>
